@@ -12,7 +12,7 @@ class Triangle
     sum_two_three = @sides[1] + @sides[2]
 
     if (@sides.none? {|side| side <= 0}) &&
-      (sum_one_two > @sides[2] && sum_one_three > @ides[1] && sum_two_three > @sides[0])
+      (sum_one_two > @sides[2] && sum_one_three > @sides[1] && sum_two_three > @sides[0])
       return true
     else
       return false
