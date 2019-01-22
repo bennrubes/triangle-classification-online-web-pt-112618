@@ -21,9 +21,9 @@ class Triangle
 
   def kind
     if valid
-      if @sides.uniq.length == 1  #@sides.uniq [5, 5, 5] => [5].length => 1 == 1
+      if @sides.uniq.length == 1  
         return :equilateral
-      elsif @sides.uniq.length == 2 #@sides.uniq [5, 5, 9] => [5, 9].length => 2 == 2
+      elsif @sides.uniq.length == 2 
         return :isosceles
       else
         return :scalene
