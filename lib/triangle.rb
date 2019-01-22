@@ -6,7 +6,7 @@ class Triangle
     @sides << side_3
   end
 
-  def valid?
+  def valid
     sum_one_two = @sides[0] + @sides[1]
     sum_one_three = @sides[0] + @sides[2]
     sum_two_three = @sides[1] + @sides[2]
@@ -20,7 +20,7 @@ class Triangle
    end
 
   def kind
-    if valid?
+    if valid
       if @sides.uniq.length == 1
         return :equilateral
       elsif @sides.uniq.length == 2
